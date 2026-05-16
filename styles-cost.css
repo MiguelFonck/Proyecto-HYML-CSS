@@ -1,0 +1,517 @@
+:root{
+    --color-primario:#012622;
+    --color-secundario:#ece5f0;
+    --color-terciario:#003b36;
+    --color-cuaternario:#221715;
+    --color-quinario:#a7d5ae;
+    --color-senario:#3DDC84;
+    --color-septenario:#378ADD;
+    --color-octonario:#ffffff;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+}
+.arriba{
+    background-color: var(--color-terciario);
+}
+.header{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.header-imagen{
+    width: 100%;
+    height: 80%;
+    background-image: url(assets/ChatGPT\ Image\ 13\ may\ 2026\,\ 03_16_52\ p.m..png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-contenido{
+    font-size: 0.90rem;
+    color: var(--color-secundario);
+    display: flex;
+    align-items: center;
+}
+
+.home{
+    color: var(--color-secundario);
+    text-decoration: none;
+}
+
+.platform{
+    color: var(--color-secundario);
+    text-decoration: none;
+}
+
+.report{
+    color: var(--color-secundario);
+    text-decoration: none;
+}
+
+.contact{
+    color: var(--color-secundario);
+    text-decoration: none;
+}
+
+nav ol{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 1rem;
+}
+
+.medio{
+    background-color: var(--color-secundario);
+    display: grid;
+    grid-template-rows: 0.30fr 1fr 1fr;
+
+}
+
+.titulos{
+    text-align: center;
+}
+
+.cards{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    padding: 1rem;
+    gap: 1rem;
+    margin: 0 auto;
+}
+
+.card1{
+    background-color: var(--color-quinario);
+    border-radius: 1rem;
+    grid-template-rows: 1fr 1fr;
+}
+
+.card2{
+    color: var(--color-secundario);
+    background-color: var(--color-terciario);
+    border-radius: 1rem;
+    grid-template-rows: 1fr 1fr;
+}
+
+.card-texto{
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.card-grafica{
+    height: 2rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.barra{
+    width: 90%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    height: 1rem;
+    background-color: var(--color-secundario);
+    border-radius: 1rem;
+    
+}
+
+.barrita1{
+    width: 16%;
+    height: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-senario);
+    border-radius: 1rem;
+   
+}
+.barrita2{
+    width: 36%;
+    height: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-senario);
+    color: var(--color-primario);
+    border-radius: 1rem;
+    
+}
+.barrita3{
+    width: 32%;
+    height: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-senario);
+    border-radius: 1rem;
+}
+
+.barrita4{
+    width: 16%;
+    height: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-senario);
+    color: #012622;
+    border-radius: 1rem;
+}
+
+.contenido-tablas{
+    width: 100%;
+    height: 36vh;
+    display: grid;
+    grid-template-rows: 0.30fr 1fr 0.40fr;
+    margin-bottom: 2.5rem;
+}
+
+.tablas-titulos{
+    width: 100%;
+    height: 6 vh;
+    display: grid;
+    background-color: var(--color-secundario);
+    padding: 1rem;
+}
+
+.titulo-final{
+    width: 60%;
+    background-color: var(--color-primario);
+    color: var(--color-octonario);
+    font-size: 1.5rem;
+    border-radius: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0.8rem;
+    text-align: center;
+}
+
+table{
+    width: 90%;
+    height: 100%;
+    border: 0.2rem solid var(--color-primario);
+    margin: 0 auto;
+    border-collapse: collapse;
+    padding: 0.5rem;
+}
+
+th{
+    border: 0.2rem solid var(--color-primario);
+    padding: 0.5rem;
+}
+
+td{
+    text-align: center;
+    border: 0.2rem solid var(--color-primario);
+    
+}
+
+
+
+.footer{
+    height: 5vh;
+    background-color: var(--color-cuaternario);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0rem;
+}
+
+.derechos{
+    font-size: 0.9rem;
+    color: var(--color-secundario);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.pdf{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cv{
+    width: 50%;
+    height: 70%;
+    background-color: var(--color-quinario);
+    display: grid;
+    border-radius: 1rem;
+    grid-template-columns: 0.50fr 1fr;
+    margin-top: 1.5rem;
+    text-decoration: none;
+}
+
+.cv-imagen{
+    height: 100%;
+    width: 100%;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-primario);
+}
+
+.cv-texto{
+    height: 100%;
+    width: 100%;
+    color: var(--color-primario);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+@media (min-width: 768px){
+    .contenido{
+        height: auto;
+        background-color: var(--color-secundario);
+    }
+    .header-imagen{
+        padding: 3rem;
+    }
+
+    .header-contenido{
+        font-size: 1.4rem;
+        margin: 0 auto;
+        background-color: var(--color-terciario);
+    }
+
+    .titulo2{
+       font-size: 1.4rem;
+    }
+
+    .cards{
+        width: 50%;
+
+    }
+    
+    .cv{
+        margin-bottom: 1.3rem;
+    }
+
+    .footer{
+        margin-top: 0rem;
+        
+    }
+
+    .cards{
+        width: 80%;
+    }
+
+    .card1{
+        width: 100%;
+    }
+
+    .card2{
+        width: 100%;
+    }
+
+    .card-texto{
+        font-size: 1.5rem;
+    }
+
+    .titulo-final{
+        font-size: 1.9rem;
+    }
+
+    thead {
+        font-size: 1.8rem;
+    }
+
+    tbody{
+        font-size: 1.5rem;
+    }
+
+    .cv-imagen{
+        font-size: 3rem;
+    }
+
+    .cv-texto{
+        font-size: 1.7rem;
+    }
+    
+    .medio{
+        margin-bottom: 0rem;
+    }
+
+    .pdf{
+        margin-bottom: 1rem;
+    }
+
+    .contenido-tablas{
+        margin-bottom: 5rem;
+    }
+}
+
+
+@media (min-width: 1024px){
+
+    .header-imagen{
+        width: 70%;
+        height: 90%;
+    }
+
+    .header-contenido{
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    nav ol{
+        gap: 5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .titulo1{
+        font-size: 1.3rem;
+    }
+
+    .titulo2{
+        font-size: 1.3rem;
+    }
+
+    .cards{
+        display: flex;
+        justify-content: center;
+        gap: 1.5rem;
+        width: 70%;
+        height: 100%;
+        flex-wrap: wrap;
+    }
+
+    .card1{
+        height: 40%;
+        width: 45%;
+    }
+
+    .card2{
+        height: 40%;
+        width: 45%;
+    }
+
+    .card-grafica{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 1rem;
+    }
+    
+    .barra{
+        height: 91%;
+    }
+
+    .barrita1{
+        height: 100%;
+    }
+
+    .barrita2{
+       height: 100%;
+    }
+
+    .barrita3{
+        height: 100%;
+    }
+
+    .barrita4{
+        height: 100%;
+    }
+
+   .card-texto{
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        margin-left: 1rem;
+   }
+
+   .card-grafica{
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        margin-left: 1rem;
+   }
+
+   .tablas-titulos{
+        width: 50%;
+   }
+   
+
+   .titulo-final{
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        margin-left: 12rem;
+   }
+   
+   .tablas{
+        width: 80%;
+        margin: 0 auto;
+   }
+
+   thead{
+        background-color: var(--color-quinario);
+   }
+
+   td{
+        padding: 0.5rem;
+   }
+
+   .pdfs{
+        width: 100%;
+        height: 60%;
+        background-color: var(--color-secundario);
+        display: flex;
+        justify-content: end;
+   }
+
+   .pdf{
+       width: 50%;
+       display: flex;
+       margin-right: 1rem;
+   }
+
+   .cv-imagen{
+       font-size: 3rem;
+   }
+
+   .cv-texto{
+       font-size: 1.5rem;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+   }
+
+
+   .footer{
+        margin-top: 4rem;
+        width: 100%;
+        height: 10%;
+   }
+
+   .derechos{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+   }
+
+
+}
