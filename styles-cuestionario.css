@@ -1,0 +1,399 @@
+:root{
+    --color-primario:#012622;
+    --color-secundario:#ece5f0;
+    --color-terciario:#003b36;
+    --color-cuaternario:#221715;
+    --color-quinario:#a7d5ae;
+    --color-senario:#3DDC84;
+    --color-septenario:#378ADD;
+    --color-octonario:#ffffff;
+    --color-1:#d4cdcd;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+.contenido{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--color-terciario);
+    display: grid;
+    grid-template-rows: 0.10fr 1fr;
+}
+
+.header{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.header-imagen{
+    width: 100%;
+    height: 70%;
+    background-image: url(assets/ChatGPT\ Image\ 13\ may\ 2026\,\ 03_16_52\ p.m..png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-contenido{
+    font-size: 0.82rem;
+    color: var(--color-secundario);
+    display: flex;
+    align-items: center;
+}
+
+nav ol{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 1rem;
+    flex-wrap: wrap;
+}
+
+.home{
+    color: var(--color-secundario);
+    text-decoration: none;
+}
+
+.acerca{
+    color: var(--color-secundario);
+    text-decoration: none;
+}
+
+.contacto{
+    color: var(--color-secundario);
+    text-decoration: none;
+}
+
+.boton{
+    color: var(--color-primario);
+    width: 90%;
+    padding: 2px;
+    margin-top: 0.1rem;
+    border-radius: 0.50rem;
+    font-size: 0.82rem;
+    background-color: var(--color-quinario);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.pagina{
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-secundario);
+    display: grid;
+    grid-template-rows: 0.07fr 0.10fr 1fr;
+}
+
+.pagina-titulo{
+    font-size: 1.20rem;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-secundario);
+    margin-top: 1rem;
+}
+
+.main-barra{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0.85rem;
+    padding: 0 2rem;
+}
+
+.circulo{
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    background-color: var(--color-1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid var(--color-primario);
+}
+
+.linea{
+    content: '';
+    height: 5px;
+    flex: 1;
+    background-color: #2c2d2d;
+}
+
+#coloreado1{
+    background-color: var(--color-secundario);
+    border: 2px solid var(--color-primario)
+
+}
+#coloreado{
+    background-color: var(--color-senario);
+}
+
+
+.circulito{
+    width: 1.2rem;
+    height: 1.2rem;
+    border-radius: 50%;
+    background-color: var(--color-senario);
+}
+
+.card{
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-quinario);
+    display: grid;
+    grid-template-columns: 0.90fr 1fr;
+    font-size: 6rem;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.cards{
+    width: 100%;
+    height: 90%;
+    background-color: var(--color-secundario);
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0.40rem;
+    margin-bottom: 2rem;
+}
+
+.card-imagen-apple{
+    color: var(--color-primario);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0.2rem solid var(--color-primario);
+}
+
+.card-imagen-android{
+    color: #0cb257;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0.2rem solid var(--color-primario);
+}
+
+.card-imagen-world{
+    color: var(--color-septenario);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0.2rem solid var(--color-primario);
+}
+
+.card-text{
+    color: var(--color-septenario);
+    background-color: var(--color-terciario);
+    border: 0.2rem solid var(--color-primario);
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 0.60fr 1fr 1fr;
+}
+
+.card-text-check{
+    width: 100%;
+    height: 4vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+label input{
+    display: flex;
+    margin-left: 10.9rem;
+
+}
+
+.card-text-titulo{
+    margin-top: 1rem;
+    color: var(--color-secundario);
+    font-size: 1rem;
+}
+
+.card-text-texto{
+    color: var(--color-secundario);
+    font-size: 1rem;
+}
+
+.botones{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns:1fr 1fr;
+}
+
+.botones-anterior{
+    font-size: 1.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.boton-anterior{
+    color: var(--color-secundario);
+    background-color: var(--color-primario);
+    width: 9rem;
+    height: 4rem;
+    border-radius: 1rem;
+     text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.botones-siguiente{
+    font-size: 1.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.boton-siguiente{
+    color: var(--color-primario);
+    background-color: var(--color-quinario);
+    border: 3px solid var(--color-primario);
+    width: 9rem;
+    height: 4rem;
+    border-radius: 1rem;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media (min-width: 768px) {
+
+    .header-contenido{
+        font-size: 1.5rem;
+        margin-left: 3rem;
+    }
+
+    .cards{
+        width: 80%;
+        height: 80%;
+        margin-left: 4.8rem;
+    }
+    .card-text-check{
+        margin-left: 3.8rem;
+    }
+
+    .botones{
+      margin-bottom: 3rem;
+    }
+}
+
+@media (min-width: 1024px){
+
+    .header-imagen{
+        width: 70%;
+        height: 90%;
+    }
+
+    .header-contenido{
+        margin: 0;
+        width: 100%;
+    }
+
+    nav ol{
+        gap: 5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .arrba{
+        width: 100%;
+    }
+
+    .boton{
+        color: var(--color-primario);
+        width: 90%;
+        padding: 2px;
+        border-radius: 0.50rem;
+        font-size: 1rem;
+        background-color: var(--color-quinario);
+    }
+
+    .pagina{
+        margin-top: 1rem;
+        width: 90%;
+        height: 95%;
+        border: 5px solid var(--color-primario);
+        border-radius: 2rem;
+        margin: 0 auto;
+    }
+
+    .pagina-titulo{
+        font-size: 1.8rem;
+    }
+
+    .pagina-barra{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main-barra{
+        margin-top: 2rem;
+        width: 75%;
+    }
+
+    .cards{
+       height: 80%;
+       width: 60%;
+       display: flex;
+       flex-direction: row;
+       margin: 0 auto;
+       gap: 2rem;
+    }
+    .card{
+        margin-top: 1.5rem;
+        display: flex;
+        flex-direction: column;  
+        width: 100%;
+        height: 100%;
+    }
+
+    .card-text-check{
+        margin-left: 1.8rem;
+    }
+
+    .botones{
+        margin-top: 0;
+        width: 100%;
+        margin-bottom: 3rem;
+        gap: 4rem;
+    }
+
+    .boton-anterior{
+        width: 80%;
+        margin-left: 22rem;
+      
+    }
+
+    .boton-siguiente{
+        width: 80%;
+        margin-right: 22rem;
+    }
+
+}
+

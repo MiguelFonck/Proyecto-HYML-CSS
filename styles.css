@@ -1,0 +1,349 @@
+:root{
+    --color-primario:#012622;
+    --color-secundario:#ece5f0;
+    --color-terciario:#003b36;
+    --color-cuaternario:#221715;
+    --color-quinario:#a7d5ae;
+    --color-senario:#3DDC84;
+    --color-septenario:#378ADD;
+    --color-octonario:#ffffff;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+}
+
+.contenido{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--color-quinario);
+    display: grid;
+    grid-template-rows: 1fr 1fr 0.30fr;
+}
+
+.header{
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-primario);
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    background: linear-gradient(to right, var(--color-primario),var(--color-quinario))
+}
+
+.imagenes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagenes-imagen{
+    width: 40%;
+    height: 100%;
+    background-image: url(assets/Calculadora.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.texto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.texto-contenido{
+    width: 100%;
+    height: 100%;
+    color:var(--color-secundario);
+    font-size: 0.50rem;
+    display: flex;
+    justify-content: start;
+    text-align: center;
+    flex-direction: column;
+}
+
+.botones{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.boton{
+    width: 30%;
+    padding: 13px;
+    margin-top: 13px;
+    margin-bottom: 13px;
+    border-radius: 0.6rem;
+    font-size: 1rem;
+    color: var(--color-secundario);
+    background-color: var(--color-primario);
+    text-decoration: none;
+}
+
+.medio{
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-quinario);
+    display: grid;
+    grid-template-rows: 0.001fr 1fr;
+    gap: 0.0625rem;
+}
+
+.medio-titulo{
+    font-size: 0.70rem;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.cards{
+    background-color: var(--color-secundario);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border: 2px solid black;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.cards-imagen-precision{
+    margin-left: 3rem;
+    width: 6rem;
+    height: 6rem;
+    background-color: var(--color-primario);
+    border-radius: 1rem;
+}
+
+.cards-imagen-resultados{
+    margin-left: 3rem;
+    width: 6rem;
+    height: 6rem;
+    background-color: var(--color-primario);
+    border-radius: 1rem;
+}
+
+.cards-imagen-transparencia{
+    margin-left: 3rem;
+    width: 6rem;
+    height: 6rem;
+    background-color: var(--color-primario);
+    border-radius: 1rem;
+}
+
+.estilos{
+    height: 100%;
+    color: var(--color-secundario);
+    font-size: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cards-texto{
+    color: var(--color-primario);
+}
+
+.abajo{
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-cuaternario);
+}
+
+.footer{
+    height: 11vh;
+    background-color: var(--color-cuaternario);
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.menu{
+    font-size: 0.6rem;
+    color: var(--color-secundario);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-right: 2.5rem;
+    margin-top: 1rem;
+}
+
+nav ol{
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.derechos{
+    font-size: 0.6rem;
+    color: var(--color-secundario);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+
+    .texto-contenido{
+        font-size: 1rem;
+        
+    }
+
+    .medios{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .medio{
+        width: 70%;
+    }
+
+    .cartas{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .cards{
+        width: 80%;
+        border-radius: 1rem;
+
+    }
+
+    .cards-imagen-precision{
+        margin-left: 1rem;
+    }
+
+     .cards-imagen-resultados{
+        margin-left: 1rem;
+    }
+
+    .cards-imagen-transparencia{
+        margin-left: 1rem;
+    }
+
+    .cards-texto{
+        font-size: 0.8rem;
+    }
+
+    .footer{
+        margin-top: 2rem;
+    }
+}
+
+@media (min-width: 1024px){
+
+   .header{
+        display: flex;
+        padding: 6rem;
+   }
+
+   .imagenes-imagen{
+        width: 97%;
+        height: 100%;
+        background-image: url(assets/Calculadora.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .texto-contenido{
+        width: 100%;
+        font-size: 1.3rem;
+        margin-left: 3rem;
+        text-align: start;
+    }
+
+   .botones{
+        display: flex;
+        justify-content: left;
+   }
+
+   .imagenes{
+        width: 40%;
+        order: 2;
+        display: flex;
+        justify-content: flex-start;
+   }
+
+   .medio-titulo{
+        font-size: 1rem;
+   }
+    
+    .arriba{
+        height: 100%;
+    }
+
+    .cartas{
+        flex-direction: row;
+        gap: 1rem;
+
+    }
+
+    .medio{
+        width: 100%;
+    }
+
+    .cartas{
+        width: 60%;
+        margin: 0 auto;
+        align-items: start;
+    }
+
+    .cards{
+        display: flex;
+        flex-direction: column;
+        border: 2px solid var(--color-primario);
+        background-color: var(--color-secundario);
+    }
+
+    .cards-imagen-precision{
+        background-color: var(--color-secundario);
+    }
+
+    .cards-imagen-resultados{
+         background-color: var(--color-secundario);
+    }
+
+    .cards-imagen-transparencia{
+        background-color: var(--color-secundario);
+    }
+
+    .cards-texto{
+        font-size: 1.4rem ;
+    }
+
+    .estilos{
+        font-size: 4rem;
+        color: var(--color-primario);
+    }
+
+    .cards-texto{
+        text-align: center;
+    }
+
+    .footer{
+        margin-top: 0;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .derechos{
+        display: flex;
+        font-size: 0.8rem;
+    }
+
+    .menu{
+        margin: 0;
+        font-size: 0.8rem;
+    }
+
+    
+   
+
+}

@@ -3,7 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles2.css">
+    <link rel="stylesheet" href="styles-cuestionario.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
     <title>CostoEstimator</title>
 </head>
 <body>
@@ -13,20 +16,20 @@
                     <div class="header-imagen">
                     </div>
                     <div class="header-contenido">
-                           <nav><ol>
+                        <nav><ol>
                         <li>
-                            Inicio
+                             <a href="index.html" class="home">Home</a>
                         </li>
                         <li>
-                            Acerca de
+                            <a href="#" class="acerca">Acerca de</a>
                         </li>
                         <li>
-                            Contacto
+                            <a href="contacto.html" class="contacto">Contato</a>
                         </li>
                         <li>
-                            Iniciar Sesión
+                            <button class="boton">Iniciar Sesión</button>
                         </li>
-                    </ol></nav>
+                        </ol></nav>
                     </div>
                 </header>
         </section>
@@ -34,13 +37,89 @@
 
 
         <section class="pagina">
-            <section class="section">
-
+            <section class="pagina-titulo">
+                <div>
+                    <h3>Paso 1 de 5:Selección de Plataforma</h1>
+                </div>
             </section>
-        </section>
+            
+
+            <section class="pagina-barra">
+                <div class="main-barra">
+                   <div class="circulo" id="coloreado1">
+                    <div class="circulito"></div>
+                   </div>
+                   <div class="linea" id="coloreado"></div>
+                   <div class="circulo"></div>
+                    <div class="linea"></div>
+                   <div class="circulo"></div>
+                    <div class="linea"></div>
+                   <div class="circulo"></div>
+                    <div class="linea"></div>
+                   <div class="circulo"></div>
+                </div>
+            </section>
 
 
+            <section class="cards">
+                    <label class="card">
+                            <div class="card-imagen-apple"><i class="ti ti-brand-apple"></i></div>
+                            <div class="card-text">
+                                <div class="card-text-check">
+                                        <label for="check">
+                                            <input type="checkbox">
+                                        </label>
+                                </div>
+                                <div class="card-text-titulo">
+                                    <h1>IOS</h1>
+                                </div>
+                                <div class="card-text-texto">
+                                    <p>Aplicaciones para iPhone y iPad.</p>
+                                </div>
+                            </div>
+                        </label>
+                        <label class="card">
+                            <div class="card-imagen-android"><i class="ti ti-brand-android"></i></div>
+                            <div class="card-text">
+                                <div class="card-text-check">
+                                    <label for="check">
+                                        <input type="checkbox">
+                                    </label> 
+                                </div>
+                                <div class="card-text-titulo">
+                                    <h1>Android</h1>
+                                </div>
+                                <div class="card-text-texto">
+                                    <p>Aplicaciones para dispositivos Android.</p>
+                                </div>
+                            </div>
+                        </label>
+                        <label class="card">
+                            <div class="card-imagen-world"><i class="ti ti-world"></i></div>
+                            <div class="card-text">
+                                <div class="card-text-check">
+                                    <label for="check">
+                                        <input type="checkbox">
+                                    </label>
+                                </div>
+                                <div class="card-text-titulo">
+                                    <h1>Web</h1>
+                                </div>
+                                <div class="card-text-texto">
+                                    Aplicaciones y sitos web accesibles.
+                                </div>
+                            </div>
+                        </label>
+            </section>
+                    <div class="botones">
+                        <div class="botones-anterior">
+                            <a href="index.html" class="boton-anterior">Anterior</a>
+                        </div>
+                        <div class="botones-siguiente">
+                        <a href="cost.html" class="boton-siguiente">Siguiente</a>
+                        </div>
+                    </div>
+         </section>
     </main>
-    
 </body>
 </html>
